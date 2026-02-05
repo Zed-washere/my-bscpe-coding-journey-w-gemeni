@@ -1,0 +1,9 @@
+2026-01-17 08:00:01 INFO User 'admin' logged in from 192.168.1.5
+2026-01-17 08:05:22 WARNING Disk space reaching 80% on /dev/sda1
+2026-01-17 08:10:45 ERROR Failed password attempt for user 'root' from 45.33.22.11
+2026-01-17 08:12:10 INFO Backup service started successfully
+2026-01-17 08:15:30 ERROR Failed password attempt for user 'root' from 45.33.22.11
+2026-01-17 08:20:01 CRITICAL Database connection lost! System offline.
+2026-01-17 08:22:15 INFO Database connection restored by watchdog
+2026-01-17 08:25:55 ERROR Failed password attempt for user 'root' from 45.33.22.11
+2026-01-17 08:30:12 WARNING Unusual traffic spike detected on Port 80
