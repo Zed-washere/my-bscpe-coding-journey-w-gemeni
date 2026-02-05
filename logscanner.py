@@ -1,0 +1,27 @@
+import sys
+from pathlib import Path
+ 
+error_ip = 0
+
+ip = "45.33.22.11"
+with open("server.log", "r") as log_file, open("security_log.text", "w") as report_file:
+
+    report_file.write(f"security report for {ip}\n")
+
+    for line in log_file:
+
+        if ip in line:
+            error_ip += 1
+
+        if "ERROR"  in line:
+            report_file.write(line.strip() + "\n")
+
+
+        elif "CRITICAL" in line:
+            report_file.write(line.strip() + "\n")
+
+
+report_file.write("-" * 30 + "\n") # Visual separator
+report_file.write(f"SUMMARY: Found {error_ip} events related to IP {ip}\n")
+
+
